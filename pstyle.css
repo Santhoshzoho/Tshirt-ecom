@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins';font-size: 22px;
+}
+.navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.nav-links{
+    display: flex;
+    column-gap: 20px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: #1d232c;
+}
+.nav-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1d232c;
+}
+
+.navbar-menu{
+    display: none;
+}
+/* media*/
+@media screen and (max-width:700px){
+    .navbar-menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    
+}
+/*side navbar*/
+
+.side-navbar{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    background-color: #1d232c;
+    top: 0;
+    left:0;
+    padding: 20px;
+    color: aliceblue;
+    display: none;
+}
+.side-nav-link{
+    margin-bottom: 30px;
+}
+
+#side-nav-links a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.side-nav-link a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.new,.men,.women,.best-selling{
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
+    padding: 40px;
+}
+
+.boxwomen{
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    width: 660px;
+    height: 340px;
+    padding: 25px;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 4%;
+
+}
+
+.boxmen{
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    width: 400px;
+    height: 340px;
+    padding: 25px;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 4%;
+
+}
+
+.searchbar{
+    padding-top: 135px;
+    text-align: center;
+    border-radius: 3%;
+
+}
+
+.search{
+    width: 60%;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.box:hover,.boxwomen:hover,.boxmen:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.box{
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    width: 280px;
+    height: 335px;
+    padding: 25px;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 3%;
+
+}
+
